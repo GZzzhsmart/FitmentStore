@@ -1,0 +1,3 @@
+if($.cookie("ECSCP_ID")){$.cookie("isEcscp",true,{path:"/",expires:365,domain:".meilele.com"})}if(!$.cookie("sendSmsPhone")&&$.cookie("_SD_")>1&&!$.cookie("ECSCP_ID")&&!$.cookie("isEcscp")&&window.oldClientPopout!=1){$.get("/dubbo_api/escommon/querySessid/isSend?cid="+$.cookie("MLL_CID"),function(res){if(res.error==0){$.oldClient({message:res.desc,imgUrl:res.imageUrl})}},"json")};
+
+/*mazengliang*242208:2016-11-23 17:11:03*/
